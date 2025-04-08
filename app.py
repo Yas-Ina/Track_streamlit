@@ -9,7 +9,6 @@ labels = ['Categorie A', 'Categorie B', 'Categorie C']
 sizes = [20, 30, 50]
 colors = ['#FF9999', '#66B3FF', '#99FF99']
 
-'''
 # Plot
 fig, ax = plt.subplots()
 wedges, texts, autotexts = ax.pie(
@@ -27,4 +26,3 @@ plt.title('Verdeling in procenten')
 
 # Toon de grafiek in Streamlit
 st.pyplot(fig)
-'''
