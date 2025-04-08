@@ -1,5 +1,6 @@
 import streamlit as st
 import matplotlib.pyplot as plt
+import pandas as pd 
 # Titel
 st.title("Mijn Dashboard")
 st.header("Versie april 2025")
