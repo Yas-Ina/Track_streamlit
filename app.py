@@ -26,3 +26,30 @@ plt.title('Verdeling in procenten')
 
 # Toon de grafiek in Streamlit
 st.pyplot(fig)
+
+# Titel van het dashboard
+st.title("Schoenenverkoop Analyse")
+
+# Laad de dataset
+df = pd.read_csv('exclusieve_schoenen_verkoop_met_locatie.csv')
+
+# Bekijk de eerste paar rijen van de dataset
+st.write("Dataset preview:", df.head())
+
+# Controleer of de kolom 'prijs' en 'land' bestaan
+if 'prijs' in df.columns and 'land' in df.columns:
+    # Bereken de gemiddelde prijs per land
+    gemiddelde_prijs_per_land = df.groupby('land')['prijs'].mean()
+
+    # Maak de grafiek
+    fig, ax = plt.subplots()
+    gemiddelde_prijs_per_land.plot(kind='bar', color='#800080', ax=ax)
+    ax.set_title('Gemiddelde prijs per land')
+    ax.set_xlabel('Land')
+    ax.set_ylabel('Gemiddelde prijs')
+
+    # Toon de grafiek in Streamlit
+    st.pyplot(fig)
+
+else:
+    st.error("De dataset bevat geen 'prijs' of 'land' kolom. Controleer je bestand.")
