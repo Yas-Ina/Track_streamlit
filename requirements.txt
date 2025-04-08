@@ -2,8 +2,8 @@ streamlit>=1.0
 pandas>=1.0
 faker>=15.0
 openpyxl
-xlsxwriter
-google.genai>=0.1.0
+XlsxWriter
+google-genai>=0.1.0
 plotly
 matplotlib>=3.5
 numpy
