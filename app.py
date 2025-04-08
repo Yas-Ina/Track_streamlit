@@ -1,5 +1,5 @@
 import streamlit as st
-import matplotlib.pyplot as plt
+import matplotlib as plt
 # Titel
 st.title("Mijn Dashboard")
 st.header("Versie april 2025")
