@@ -5,4 +5,5 @@ openpyxl
 xlsxwriter
 google.genai>=0.1.0
 plotly
-matplotlib
+matplotlib>=3.5
+numpy
