@@ -19,7 +19,7 @@ wedges, texts, autotexts = ax.pie(
     startangle=90,
     wedgeprops={'width': 0.4}
 )
-ax.axis('equal')  # Zorgt voor een ronde donut
+ax.axis('equal')  # Zorgt voor een ronde donut!
 
 # Titel voor de grafiek
 plt.title('Verdeling in procenten')
