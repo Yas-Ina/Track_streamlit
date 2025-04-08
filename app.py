@@ -1,13 +1,13 @@
 import streamlit as st
-import matplotlib as plt
+import matplotlib.pyplot as plt
 # Titel
 st.title("Mijn Dashboard")
 st.header("Versie april 2025")
-st.markdown("Welkom bij mijn dashboard.")
+st.markdown("Welkom bij mijn donut.")
 # Donutchart
 labels = ['Categorie A', 'Categorie B', 'Categorie C']
 sizes = [20, 30, 50]
-colors = ['#FF9999', '#66B3FF', '#99FF99']
+colors = ['#FF9999', '#66B3FF', '#99FF99'] # Drie kleuren voor onderscheid
 
 # Plot
 fig, ax = plt.subplots()
